@@ -27,12 +27,19 @@
             padding: 20px;
         }
 
-        h1, h2, h3 {
+        h1,
+        h2,
+        h3 {
             color: #162521;
             text-align: center;
         }
 
-        p, ul, ol, figure, form, fieldset {
+        p,
+        ul,
+        ol,
+        figure,
+        form,
+        fieldset {
             margin-bottom: 20px;
         }
 
@@ -51,6 +58,13 @@
             border-radius: 10px;
         }
 
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+
         figure {
             text-align: center;
         }
@@ -60,7 +74,8 @@
             color: #3c474b;
         }
 
-        ul, ol {
+        ul,
+        ol {
             padding-left: 40px;
         }
 
@@ -119,10 +134,20 @@
     <main>
         <section>
             <h2>Cat Photos</h2>
-            <p>See more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
-            <a href="https://freecatphotoapp.com">
-                <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back.">
-            </a>
+            <div class="grid">
+                <figure>
+                    <a href="https://freecatphotoapp.com">
+                        <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back.">
+                    </a>
+                    <figcaption>A cute orange cat lying on its back.</figcaption>
+                </figure>
+                <figure>
+                    <a href="https://freecatphotoapp.com">
+                        <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back.">
+                    </a>
+                    <figcaption>A cute orange cat lying on its back.</figcaption>
+                </figure>
+            </div>
         </section>
 
         <section>
@@ -133,10 +158,16 @@
                 <li>laser pointers</li>
                 <li>lasagna</li>
             </ul>
-            <figure>
-                <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
-                <figcaption>Cats <em>love</em> lasagna.</figcaption>
-            </figure>
+            <div class="grid">
+                <figure>
+                    <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
+                    <figcaption>Cats <em>love</em> lasagna.</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
+                    <figcaption>Cats <em>love</em> lasagna.</figcaption>
+                </figure>
+            </div>
 
             <h3>Top 3 things cats hate:</h3>
             <ol>
@@ -144,10 +175,16 @@
                 <li>thunder</li>
                 <li>other cats</li>
             </ol>
-            <figure>
-                <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
-                <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
-            </figure>
+            <div class="grid">
+                <figure>
+                    <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
+                    <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
+                    <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
+                </figure>
+            </div>
         </section>
 
         <section>
